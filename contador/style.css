@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #4184D7;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    margin: 20px;
+}
+
+article{
+    background-color: aliceblue;
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+input[type = 'number']{
+    margin: 5px;
+    width: 80%;
+}
+
+input[type = 'button']{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4184D7;
+    color: antiquewhite;
+    margin: 20px 100px;
+}

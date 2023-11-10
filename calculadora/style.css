@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #3E83D9;
+}
+
+h1{
+    text-align: center;
+    color: antiquewhite;
+    margin: 20px;
+}
+
+article{
+    background-color: #fff;
+    width: 400px;
+    height: 250px;
+    padding: 10px;
+    margin: auto;
+}

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #3E81D4;
+}
+h1{
+    text-align: center;
+    color: #fff;
+}
+article{
+    background-color: #fff;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+.copy{
+    color: #fff;
+    text-align: center;
+}
+input{
+    margin: 10px 0;
+}
+input[type = 'button']{
+    background-image: linear-gradient(0deg, #b3b5b7, #fff);
+    border: 1px solid #3E81D4;
+    padding: 1px 10px;
+}
+img{
+    width: 200px;
+    border-radius: 200px;
+    position: relative;
+    top: -40px;
+    left: -100px;
+}
+#res{
+    text-align: center;
+}

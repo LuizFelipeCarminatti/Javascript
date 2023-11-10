@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h1{
+            text-align: center;
+            color: #fff;
+            margin: 10px;
+        }
+        article{
+            background-color: #fff;
+            margin: auto;
+            width: 500px;
+            height: 350px;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        article img{
+            position: absolute;
+            top: 30px;
+            left: 20%;
+            border-radius: 200px;
+            width: 300px;
+            padding: 10px;
+        }
+        p{
+            text-align: center;
+            padding: 5px;
+        }
+        #hora{
+            color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hora do Dia</h1>
+    <article>
+        <p id="hora"></p>
+        <img src="#" id="img">
+    </article>
+    <p style="color: #fff; font-style: italic;">&copy;Curso em Vídeo</p>
+
+    <script>
+        
+        function horaDia() {
+            let date = new Date()
+            let hora = date.getHours()
+            let minutos = date.getMinutes()
+            let horario = document.getElementById('hora')
+            horario.innerHTML = `${hora}:${minutos} horas`
+            let img = document.getElementById('img')
+            if (hora < 12) {
+                document.body.style.backgroundColor = '#dadf9f'
+                img.src = 'manha.jpg'
+            } else if(hora > 12 || hora <= 18){
+                document.body.style.backgroundColor = '#e1853f'
+                img.src = 'tarde.jpg'
+            } else if(hora > 18){
+                document.body.style.backgroundColor = '#000'
+                img.src = 'noite.jpg'
+            }
+        }
+        setInterval(() => {
+            horaDia()
+        }, 1000);
+    </script>
+</body>
+</html>
